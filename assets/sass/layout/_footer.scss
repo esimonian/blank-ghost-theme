@@ -1,0 +1,17 @@
+.site-footer {
+	background: $background-color;
+	border-top: 1px solid #eee;
+	padding: ($phi * 1rem) 0;
+
+	.container {
+		display: flex;
+	}
+
+	p {
+		margin: 0;
+	}
+
+	.powered-by {
+		margin-left: auto;
+	}
+}

@@ -1,0 +1,22 @@
+.posts {
+	article {
+		max-width: 960px;
+		margin-bottom: 4rem;
+
+		h2 {
+			font-size: 5em;
+			margin: 0 0 0.25em;
+
+			a {
+				color: $headings-color;
+				text-decoration: none;
+			}
+		}
+
+		p {
+			font-size: 1.125em;
+			line-height: 1.7;
+			margin: 0;
+		}
+	}
+}

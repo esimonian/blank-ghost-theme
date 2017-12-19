@@ -1,0 +1,5 @@
+.vscode/
+assets/css/
+assets/js/dist/
+dist/
+node_modules/

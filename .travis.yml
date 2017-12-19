@@ -1,0 +1,21 @@
+branches:
+  only:
+    - "/^v\\d{1,2}\\.\\d{1,2}\\.\\d{1,2}$/"
+language: node_js
+node_js: '6'
+before_script:
+  - npm install -g gulp-cli
+  - npm install
+script:
+  - gulp zip
+deploy:
+  provider: releases
+  api_key:
+    secure: YOUR_API_KEY_ENCRYPTED
+  file_glob: true
+  file: dist/blank-*.zip
+  on:
+    repo: WaqasIbrahim/blank
+    branch: master
+    tags: true
+  skip_cleanup: true

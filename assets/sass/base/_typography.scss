@@ -1,0 +1,58 @@
+html {
+	font-size: 100%;
+}
+
+body {
+	font-family: $text-font-stack;
+	font-size: 1em;
+	font-weight: 400;
+	line-height: $phi * 1em;
+	color: $text-color;
+
+	@media screen and (max-width: 60rem) {
+		font-size: 0.875em;
+	}
+}
+
+p {
+	margin-bottom: 1.3em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 1.414em 0 0.5em;
+	line-height: 1.2;
+	font-weight: 900;
+	color: $headings-color;
+}
+
+@include headings();
+
+small {
+	font-size: 0.75em;
+}
+
+a {
+	background: transparent;
+	text-decoration: underline;
+	color: $brand-color;
+	display: inline-block;
+
+	&:focus,
+	&:active {
+		outline: 1px dotted #bbb; // Keyboard navigation
+	}
+
+	&:hover {
+		outline: 0;
+	}
+}
+
+code,
+pre {
+	font-family: $code-font-stack;
+}

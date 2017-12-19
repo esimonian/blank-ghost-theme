@@ -1,0 +1,41 @@
+label {
+	display: table;
+	padding: 0.25em 0;
+}
+
+input,
+select,
+textarea {
+	line-height: inherit;
+	font-family: inherit;
+	color: inherit;
+}
+
+[type="text"],
+[type="email"],
+[type="tel"],
+textarea,
+select {
+	width: 100%;
+	padding: ($golden-minor * 1em) ($golden-major * 1em);
+	background: #fff;
+	border: 1px solid #ddd;
+	border-radius: 2px;
+
+	&:focus {
+		outline: 0;
+		border-color: lighten($brand-color, 40);
+	}
+}
+
+[type="text"],
+[type="email"],
+[type="tel"],
+select {
+	max-width: 24rem;
+}
+
+textarea {
+	max-width: 100%;
+	min-height: 8rem;
+}
